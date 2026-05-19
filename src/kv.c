@@ -1,7 +1,9 @@
 #include <kv.h>
 
 kv_t *kv_init(size_t capacity) {
-	if(capacity == 0) return NULL;
+	if(capacity == 0) {
+		return NULL;
+	}
 
 	kv_t *table = malloc(sizeof(kv_t));
 
